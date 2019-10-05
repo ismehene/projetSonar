@@ -1,9 +1,9 @@
-pipeline {
+node {
     agent any triggers {
          pollSCM('* * * * *') // Polling Source Control
      }
 
-stages{
+    stages{
         stage('Build'){
             steps {
                 bat 'mvn clean package'
