@@ -1,7 +1,5 @@
 pipeline {
-    agent any
-    
-    triggers {
+    agent any triggers {
          pollSCM('* * * * *') // Polling Source Control
      }
 
